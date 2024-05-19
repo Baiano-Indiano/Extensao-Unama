@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Carbono Checker",
+    "version": "1.0",
+    "description": "Calcule e reduza a pegada de carbono de uma página web.",
+    "icons":{
+      "15": "icon15.png"
+    },
+    "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon15.png"
+    },
+    
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
